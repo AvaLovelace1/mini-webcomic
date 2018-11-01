@@ -18,12 +18,12 @@ Note: you must have npm and Gulp installed on your machine to use these features
 
 Comics are organized by storyline; each story contains one or more pages. Page numbers are displayed under the title of the story (unless the story consists of only one page).
 
-Comic image files are stored in `comics`. Image file names follow the format `<base filename>_<3-digit page number>.<file extension>`:
+**Comic image files** are stored in `comics`. Image file names follow the format `<base filename>_<3-digit page number>.<file extension>`:
 * `base filename`: The base filename. All images in the same story must use the same base filename.
 * `3-digit page number`: The page number of this image. This must be padded with leading zeroes to a length of 3 digits (this makes it more convenient for me, as Clip Studio Paint exports comic pages in this format; you can modify this in `php/comiclist.php`).
 * `file extension`: The file extension for the images in this story. Any image file type may be used (.jpg, .png, .gif, etc). All images in the same story must use the same file extension.
 
-Comic data is stored in `files/comiclist.txt`. Each story is on a separate line and follows the format `<title> :: <hover-texts> :: <base filename>.<file extension> :: <number of pages>` (delimited by double colons `::`):
+**Comic data** is stored in `files/comiclist.txt`. Each story is on a separate line and follows the format `<title> :: <hover-texts> :: <base filename>.<file extension> :: <number of pages>` (delimited by double colons `::`):
 * `title`: The title of this story.
 * `hover-texts`: A list of length `number of pages` delimited by double commas `,,`. Contains the text that appears when hovering the mouse over each page of this story.
 * `base filename`: The base filename for the images in this story.
