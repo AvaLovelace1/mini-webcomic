@@ -1,0 +1,22 @@
+{
+    "title": "Webcomic Engine",
+    "name": "webcomic-engine",
+    "version": "1.0.0",
+    "description": "A simple webcomic engine and template built on PHP and Bootstrap",
+    "keywords": [
+        "css",
+        "html",
+        "php",
+        "template",
+        "webcomic"
+    ],
+    "license": "MIT",
+    "author": "Ava Pun",
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "browser-sync": "^2.26.3",
+        "gulp": "^3.9.1",
+        "gulp-connect-php": "^1.0.3",
+        "jquery": "3.3.1"
+    }
+}
