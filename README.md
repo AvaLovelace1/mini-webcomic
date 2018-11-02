@@ -2,6 +2,8 @@
 
 A simple webcomic engine and template created with PHP and Bootstrap for my webcomic, Academy 118.
 
+![Screenshot](https://github.com/AvaLovelace1/webcomic-engine/blob/master/screenshot.png?raw=true "screenshot")
+
 ## Installation
 
 After downloading, install via npm by running `npm i` and `npm install`.
