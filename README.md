@@ -1,6 +1,8 @@
 # webcomic-engine
 
-A simple webcomic engine and template created with PHP and Bootstrap for my webcomic, Academy 118.
+A simple webcomic engine and template created with PHP and Bootstrap for my webcomic, *[Academy 118](https://academy118.com)*.
+
+![Screenshot](https://github.com/AvaLovelace1/webcomic-engine/blob/master/screenshot.png?raw=true "screenshot")
 
 ## Installation
 
