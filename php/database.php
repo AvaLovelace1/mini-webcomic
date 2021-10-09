@@ -23,6 +23,12 @@ $random_page = rand($first_page, $last_page);
 
 $curr_comic = get_comic($curr_page);
 
+$episode_first_page = intval(
+    $conn->query(
+        "SELECT id FROM comics WHERE page_number=1 AND episode_id=" . $curr_comic["episode_id"]
+    )->fetch_assoc()["id"]
+);
+
 function get_comic($page): array
 {
     global $conn;
