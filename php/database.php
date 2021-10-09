@@ -61,5 +61,15 @@ function get_alt($comic): string
 
 function get_hover($comic): string
 {
-    return $comic["hover"];
+    return addslashes($comic["hover"]);
+}
+
+function get_publish_date($comic): string
+{
+    return $comic["publish_date"];
+}
+
+function get_featured_characters($comic): string
+{
+    return $comic["featured_characters"];
 }
