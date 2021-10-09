@@ -19,7 +19,8 @@ include_once("./php/database.php");
     <title>Mini Webcomic</title>
 
     <!-- Bootstrap CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <!-- Custom CSS styles -->
     <link href="css/style.css" rel="stylesheet"/>
@@ -77,9 +78,7 @@ include_once("./php/database.php");
     </div>
 </footer>
 
-<!-- Bootstrap JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<?php include_once("php/tail.php") ?>
 
 </body>
 </html>
