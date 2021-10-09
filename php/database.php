@@ -21,6 +21,8 @@ $prev_page = max($curr_page - 1, $first_page);
 $next_page = min($curr_page + 1, $last_page);
 $random_page = rand($first_page, $last_page);
 
+$curr_comic = get_comic($curr_page);
+
 function get_comic($page): array
 {
     global $conn;

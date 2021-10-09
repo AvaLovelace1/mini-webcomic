@@ -1,7 +1,7 @@
 <?php
 include_once("./php/database.php");
 /**
- * @var int $total_pages
+ * @var int $curr_comic
  * @var int $curr_page
  */
 ?>
@@ -10,29 +10,16 @@ include_once("./php/database.php");
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-
-    <title>Mini Webcomic</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-
-    <!-- Custom CSS styles -->
-    <link href="css/style.css" rel="stylesheet"/>
-
+    <title>Mini Webcomic - <?= get_title($curr_comic) ?> Page <?= get_page_number($curr_comic) ?></title>
+    <?php include_once("php/head.php") ?>
 </head>
 
 <body id="page-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.php">A Webcomic</a>
+        <a class="navbar-brand" href="index.php">Mini Webcomic</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,7 +52,7 @@ include_once("./php/database.php");
             />
             <?php include("php/comicnav.php"); ?>
             <div class="mb-3">
-                <h1><?= get_title($c) ?> | Page <?= get_page_number($c) ?></h1>
+                <h1><?= get_title($c) ?> - Page <?= get_page_number($c) ?></h1>
             </div>
         </div>
     </div>
