@@ -1,18 +1,28 @@
-<!-- Comic navigation -->
+<?php
+include_once("./php/database.php");
+/**
+ * @var int $first_page
+ * @var int $prev_page
+ * @var int $next_page
+ * @var int $last_page
+ * @var int $random_page
+ */
+?>
+
 <div class="row text-center">
     <div class="col">
-        <a href=<?php echo(CURR_PAGE . "?comic=" . 1) ?> class="btn btn-light" role="button">First</a>
+        <a href="index.php?comic=<?= $first_page ?>" class="btn btn-light" role="button">First</a>
     </div>
     <div class="col">
-        <a href=<?php echo(CURR_PAGE . "?comic=" . (CURR_N == 1 ? 1 : CURR_N - 1)) ?> class="btn btn-light" role="button">Prev</a>
+        <a href="index.php?comic=<?= $prev_page ?>" class="btn btn-light" role="button">Prev</a>
     </div>
     <div class="col">
-        <a href=<?php echo(CURR_PAGE . "?comic=" . rand(1, N_COMICS)) ?> class="btn btn-light" role="button">Random</a>
+        <a href="index.php?comic=<?= $random_page ?>" class="btn btn-light" role="button">Random</a>
     </div>
     <div class="col">
-        <a href=<?php echo(CURR_PAGE . "?comic=" . (CURR_N == N_COMICS ? CURR_N : CURR_N + 1)) ?> class="btn btn-light" role="button" >Next</a>
+        <a href="index.php?comic=<?= $next_page ?>" class="btn btn-light" role="button">Next</a>
     </div>
     <div class="col">
-        <a href=<?php echo(CURR_PAGE . "?comic=" . N_COMICS) ?> class="btn btn-light" role="button" >Last </a>
+        <a href="index.php?comic=<?= $last_page ?>" class="btn btn-light" role="button">Last</a>
     </div>
 </div>
