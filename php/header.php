@@ -15,7 +15,7 @@
                     <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Archive</a>
+                    <a class="nav-link" href="archive.php">Archive</a>
                 </li>
             </ul>
         </div>

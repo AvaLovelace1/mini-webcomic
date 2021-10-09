@@ -1,12 +1,12 @@
 <?php
-include_once("./php/database.php");
+include_once("./php/databasecomic.php");
 /**
  * @var int $curr_comic
  * @var int $episode_first_page
  */
 ?>
 
-<section id="comic" class="my-3 container">
+<section class="my-3 container">
     <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 col-xl-7">
             <?php include("php/comicnav.php"); ?>
