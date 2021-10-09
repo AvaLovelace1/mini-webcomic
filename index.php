@@ -14,7 +14,7 @@ include_once("./php/database.php");
     <?php include_once("php/head.php") ?>
 </head>
 
-<body id="page-top">
+<body>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
@@ -58,13 +58,7 @@ include_once("./php/database.php");
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="py-3 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; Your Name 2021</p>
-    </div>
-</footer>
-
+<?php include_once("php/footer.php") ?>
 <?php include_once("php/tail.php") ?>
 
 </body>
