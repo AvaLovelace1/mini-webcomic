@@ -1,4 +1,4 @@
-# webcomic-engine
+# mini-webcomic
 
 A minimalistic, responsive webcomic template created for my comic, *[Academy 118](https://academy118.com)*.
 
