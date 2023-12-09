@@ -1,5 +1,7 @@
 # mini-webcomic
 
+**UPDATE 2023/12/09: A new, _database-free_ version of mini-webcomic is now available [here](https://github.com/AvaLovelace1/mini-hugo-webcomic)!**
+
 A minimalistic, responsive webcomic template created for my comic, *[Academy 118](https://academy118.com)*.
 
 ![Desktop screenshot](screenshot-desktop.png "Desktop screenshot") ![Desktop screenshot](screenshot-mobile.png "Mobile screenshot")
